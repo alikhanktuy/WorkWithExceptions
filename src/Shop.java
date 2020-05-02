@@ -7,9 +7,9 @@ public class Shop {
     private List<Cars> listOfCars = new ArrayList<>();
 
     public void addCars(Cars cars) throws OutOfFreePlaceException {
-        if (cars.height > 2000 && cars.width > 3000) {
+        if (cars.length > 5000 && cars.height > 2000 && cars.width > 3000) {
             throw new TooBigCarException();
-        } else if (cars.length > 6000) {
+        } else if (listOfCars.size() > 3) {
             throw new OutOfFreePlaceException();
         }
         listOfCars.add(cars);

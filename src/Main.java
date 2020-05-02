@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         Mazda mazda = new Mazda("RX7", 5000, 1000, 1500, 4500);
         Nissan nissan = new Nissan("G34", 6000, 1000, 2500, 5000);
-        Toyota toyota = new Toyota("Supra", 4500, 1200, 40000, 60000);
+        Toyota toyota = new Toyota("Supra", 4500, 2100, 40000, 60000);
         Shop shop = new Shop();
         try {
             shop.addCars(mazda);
